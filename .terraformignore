@@ -1,0 +1,7 @@
+*.tfvars
+*.json
+terraform.tfstate
+terraform.tfstate.backup
+secrets/
+credentials.json
+local-modules/
