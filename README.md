@@ -7,12 +7,13 @@ This repository contains Terraform code and configurations to provision and mana
 - Provision GKE clusters to host Kubernetes workloads.
 - Configure networking, firewall rules, IAM roles, and service accounts.
 - Designed to support Helm-based deployments in Kubernetes.
-- Infrastructure deployment is automated using **GitHub Actions** workflows.
+- Infrastructure deployment is automated using GitHub Actions workflows.
+- The nginx controller and helm configurations are also installed using terraform on GCP.
 
 ## GitHub Actions Integration
 
 - Uses a **Google Cloud service account** with necessary permissions.
-- The service account credentials are securely stored as **GitHub Secrets** in this repo.
+- The service account credentials are securely stored as GitHub Secrets in this repo.
 - The workflow automates Terraform commands (`init`, `plan`, `apply`) triggered on push to main branches.
 - Ensures infrastructure is provisioned or updated consistently and repeatably.
 
